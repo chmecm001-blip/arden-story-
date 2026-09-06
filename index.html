@@ -24,6 +24,40 @@ section{padding:34px 18px;border-bottom:1px solid var(--line)}h2{margin:4px 0 18
 .world-grid{display:grid;grid-template-columns:1fr;gap:10px}.world-box{border-radius:14px;border:1px solid var(--line);padding:15px;background:#fbfcfd}.world-box h3{margin:0 0 5px;font-size:14px}.south{background:#fff8fb}.north{background:#f7f9fc}
 .closing{margin-top:12px;padding:16px;border-left:4px solid var(--navy);background:#f6f8fb;font-family:"Noto Serif KR","Batang",serif;font-size:15px}.footer{padding:28px 18px 40px;text-align:center;color:#a0a6b0;font-family:Georgia,serif;font-size:10px;letter-spacing:.16em}
 @media(min-width:640px){section{padding:42px 32px}.profile{display:grid;grid-template-columns:42% 58%}.profile img{height:100%;aspect-ratio:auto;min-height:430px}.profile-body{padding:28px}.meta{grid-template-columns:repeat(4,minmax(0,1fr))}.world-grid{grid-template-columns:1fr 1fr}}
+
+/* FAMILY RELATION MAP */
+.family-section{padding:34px 18px;border-bottom:1px solid var(--line)}
+.family-card{border:1px solid var(--line);border-radius:20px;padding:18px 12px 20px;background:#fcfcfd}
+.family-title{font-size:11px;font-weight:800;letter-spacing:.12em;color:#78869b;margin-bottom:18px}
+.family-grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.family-person{text-align:center;position:relative}
+.family-avatar{width:92px;height:92px;margin:0 auto 9px;border-radius:50%;overflow:hidden;background:#eff2f5;border:4px solid #fff;box-shadow:0 0 0 1px #dde2e7,0 7px 16px rgba(0,0,0,.08)}
+.family-avatar img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+.family-avatar.empty{display:grid;place-items:center;font-family:Georgia,serif;font-size:20px;color:#9da4ad}
+.family-name{font-size:15px;font-weight:800;line-height:1.25}
+.family-role{margin-top:3px;font-size:9.5px;color:#7a808a;line-height:1.4}
+.family-desc{margin:6px auto 0;max-width:145px;font-size:9.5px;line-height:1.48;color:#606873}
+.family-badge{display:inline-block;margin-top:7px;padding:4px 7px;border-radius:999px;font-size:8.5px;font-weight:700}
+.family-badge.pink{background:#f8edf2;color:#a26480}.family-badge.blue{background:#eef3f8;color:#607791}.family-badge.gold{background:#f7f1e7;color:#8d7144}
+.family-spouse-line{height:1px;background:#cfd5dc;margin:15px 25% 0}.family-down{width:1px;height:22px;background:#cfd5dc;margin:0 auto}
+.family-child-row{position:relative;padding-top:22px}.family-child-row:before{content:"";position:absolute;top:0;left:25%;right:25%;height:1px;background:#cfd5dc}
+.family-child{position:relative}.family-child:before{content:"";position:absolute;top:-22px;left:50%;width:1px;height:22px;background:#cfd5dc}
+.family-legend{display:flex;flex-wrap:wrap;gap:6px;margin-top:13px}.family-legend span{padding:5px 7px;border-radius:999px;background:#f4f5f7;color:#68707a;font-size:8.5px}
+.support-card{margin-top:16px;border:1px solid var(--line);border-radius:20px;padding:18px 12px;background:#f8fafc}
+.kyle-card{display:flex;align-items:center;gap:13px;padding:12px;border:1px solid #e4e8ed;border-radius:15px;background:#fff}
+.kyle-card .family-avatar{flex:0 0 88px;width:88px;height:88px;margin:0}
+.kyle-text{min-width:0;flex:1}
+.kyle-card .family-desc{margin:6px 0 0;max-width:none;text-align:left}
+.family-note{margin-top:10px;padding:10px 11px;border-left:3px solid #93a7be;background:#f5f8fb;color:#5e6772;font-size:9.5px;line-height:1.5}
+@media(min-width:560px){
+  .family-section{padding:42px 32px}
+  .family-card,.support-card{padding:22px 20px 24px}
+  .family-avatar{width:112px;height:112px}
+  .family-name{font-size:17px}.family-role{font-size:10.5px}.family-desc{font-size:10.5px;max-width:190px}
+  .kyle-card .family-avatar{width:106px;height:106px;flex-basis:106px}
+  .family-note{font-size:10.5px}
+}
+
 </style>
 </head>
 <body><div class="wrap">
@@ -32,10 +66,10 @@ section{padding:34px 18px;border-bottom:1px solid var(--line)}h2{margin:4px 0 18
 <p class="intro">사교계의 꽃.<br>사랑스러운 아가씨.<br>한 번 웃으면 누구든 마음을 빼앗긴다는 그녀.<br>전쟁 영웅의 예비 신부 <strong>{{user}}</strong><span class="twist">...가 아니라 그 동생.</span></p>
 </header>
 
-<nav><a href="#theodore">테오도르</a><a href="#locke">로크</a><a href="#mireille">미레유</a><a href="#story">스토리</a><a href="#world">세계관</a></nav>
+<nav><a href="#theodore">테오도르</a><a href="#locke">로크</a><a href="#mireille">미레유</a><a href="#family">관계도</a><a href="#story">스토리</a><a href="#world">세계관</a></nav>
 
 <section id="theodore"><div class="section-label">CHARACTER 01</div><h2>테오도르 레온하르트</h2>
-<article class="profile"><img src="https://i.imgur.com/Osl5VRx.png" alt="테오도르 레온하르트"><div class="profile-body">
+<article class="profile"><img src="https://i.imgur.com/KuFpSob.png" alt="테오도르 레온하르트"><div class="profile-body">
 <h3 class="name">테오도르 레온하르트</h3><div class="eng">Theodore Leonhardt</div>
 <div class="meta"><div><b>33세</b><span>AGE</span></div><div><b>사자 수인</b><span>SPECIES</span></div><div><b>남부 후작</b><span>STATUS</span></div><div><b>187cm</b><span>HEIGHT</span></div></div>
 <p>황금빛 머리와 붉은 눈, 흐트러짐 없는 완벽한 전쟁영웅. 겉으로는 관대하고 예의 바르지만, 사람을 사랑과 역할로 분리해 판단하는 극단적인 효용주의자다.</p>
@@ -57,6 +91,76 @@ section{padding:34px 18px;border-bottom:1px solid var(--line)}h2{margin:4px 0 18
 <p>백금빛 머리와 하늘색 눈을 가진 화려한 미인. 어리광이 많고 타인의 양보를 당연하게 받아들이며, 자신은 보호받아야 하는 사람이라고 자연스럽게 믿는다.</p>
 <div class="tags"><span class="tag">사교적</span><span class="tag">어리광</span><span class="tag">철부지</span><span class="tag">관심욕구</span><span class="tag">테오도르</span></div>
 <div class="quote">“난 추위도 못 견디잖아. {{user}}는 어디서든 잘할 수 있고.”</div></div></article></section>
+
+
+<section id="family" class="family-section">
+<div class="section-label">FAMILY & RELATIONS</div>
+<h2>가문 · 관계도</h2>
+
+<div class="family-card">
+  <div class="family-title">HOUSEHOLD · {{user}} 가문</div>
+
+  <div class="family-grid2">
+    <div class="family-person">
+      <div class="family-avatar"><img src="https://i.imgur.com/TeZdUHb.png" alt="에드윈"></div>
+      <div class="family-name">에드윈</div>
+      <div class="family-role">가주 · {{user}}의 친부</div>
+      <div class="family-desc">체면과 가문을 중시하며 “너는 잘하니까”라는 논리로 {{user}}에게 양보를 요구한다.</div>
+      <span class="family-badge gold">친부</span>
+    </div>
+
+    <div class="family-person">
+      <div class="family-avatar"><img src="https://i.imgur.com/Tt1G6N4.png" alt="벨라"></div>
+      <div class="family-name">벨라</div>
+      <div class="family-role">계모 · 미레유의 친모</div>
+      <div class="family-desc">미레유에게는 다정하지만 {{user}}에게는 냉담하고 비꼬는 태도를 보인다.</div>
+      <span class="family-badge pink">계모</span>
+    </div>
+  </div>
+
+  <div class="family-spouse-line"></div>
+  <div class="family-down"></div>
+
+  <div class="family-grid2 family-child-row">
+    <div class="family-person family-child">
+      <div class="family-avatar empty">{{user}}</div>
+      <div class="family-name">{{user}}</div>
+      <div class="family-role">남부 최상위 명문가 적통</div>
+      <div class="family-desc">성별·종족·외모·성격·행동은 플레이어가 직접 결정한다.</div>
+      <span class="family-badge blue">PC · 적통</span>
+    </div>
+
+    <div class="family-person family-child">
+      <div class="family-avatar"><img src="https://i.imgur.com/0DtjpLf.png" alt="미레유"></div>
+      <div class="family-name">미레유</div>
+      <div class="family-role">무혈연 의붓동생</div>
+      <div class="family-desc">벨라와 전남편의 딸. 편애 속에서 자라 양보받는 것을 자연스럽게 여긴다.</div>
+      <span class="family-badge pink">의붓동생</span>
+    </div>
+  </div>
+
+  <div class="family-legend">
+    <span>에드윈 ↔ 벨라 : 재혼</span>
+    <span>에드윈 → {{user}} : 친부</span>
+    <span>벨라 → 미레유 : 친모</span>
+    <span>{{user}} ↔ 미레유 : 무혈연</span>
+  </div>
+</div>
+
+<div class="support-card">
+  <div class="family-title">NORTHERN SIDE · 로크 측</div>
+  <div class="kyle-card">
+    <div class="family-avatar"><img src="https://i.imgur.com/zX1KULB.png" alt="카일 베른"></div>
+    <div class="kyle-text">
+      <div class="family-name">카일 베른</div>
+      <div class="family-role">31세 · 셰퍼드 수인 · 로크의 수석보좌관</div>
+      <div class="family-desc">냉정한 상식인이자 정중한 독설가. 로크가 벌인 사고를 수습하고 북부 저택의 실무를 떠받친다.</div>
+      <span class="family-badge blue">수석보좌관</span>
+    </div>
+  </div>
+  <div class="family-note">혼인 교체가 성사되면 {{user}}가 북부에서 자주 마주치게 되는 핵심 조력자.</div>
+</div>
+</section>
 
 <section id="story"><div class="section-label">STORY</div><h2>초반 스토리</h2><div class="timeline">
 <div class="step"><div class="when">6개월 전</div><b>전쟁영웅의 공개 구애</b><p>테오도르가 {{user}}에게 공개적으로 구애한다. 사교계는 둘의 혼인을 사실상 기정사실로 받아들인다.</p></div>
